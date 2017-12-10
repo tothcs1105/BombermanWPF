@@ -1,0 +1,28 @@
+﻿<Window x:Class="Bomberman.EredményWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bomberman"
+        mc:Ignorable="d"
+        Title="Eredmény" Height="313.807" Width="300" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="./Resources/bomba.png">
+    <Window.Resources>
+        <local:StringToImageConverter x:Key="StringToImageConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Source="Resources/podium12.png" Margin="10,107,10,53"/>
+        <Label Content="{Binding Path=Vesztes[0]}" FontWeight="Bold" HorizontalContentAlignment="Center" Grid.Column="0" Margin="20,237,160,9"/>
+        <Label Content="{Binding Path=Nyertes[0]}" FontWeight="Bold" HorizontalContentAlignment="Center" Margin="146,237,30,9"/>
+        <Image x:Name="image1" Source="{Binding Path=Nyertes[1], Converter={StaticResource StringToImageConverter}}" Margin="179,83,65,152"/>
+        <Image x:Name="image2" Source="{Binding Path=Vesztes[1], Converter={StaticResource StringToImageConverter}}" Margin="54,102,190,133"/>
+        <Label ContentStringFormat="{}{0} Nyert!" Content="{Binding Path=Nyertes[0]}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" FontSize="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
+
+
+    </Grid>
+</Window>

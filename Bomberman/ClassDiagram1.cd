@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bomberman.AboutWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AboutWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.App" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.BoolToVisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoolToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.EredményWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgkAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EredményWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.GameSettingsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAAAAAAAAAAAAAAAAhAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameSettingsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.GameWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAIAABIAAAgAAIAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>GameWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.JátékBeállítás" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAAAAAAAAAAAAAAAEAACABAAAgAAAAIAABACABA=</HashCode>
+      <FileName>JátékBeállítás.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.SecondToMinuteSecondConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecondToMinuteSecondConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.StringToImageConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StringToImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Bomberman.Events.JátékosHalálArgs" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\JátékosHalálArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Events.VégeredményArgs" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAABAA=</HashCode>
+      <FileName>Events\VégeredményArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Bindable" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Játék\Bindable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Bomberman.Játék.GameViewModel" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGgAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAADIBA=</HashCode>
+      <FileName>Játék\GameViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.JátékTér.Játékelem" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAAAAAAAQAAIAEACDAAAAAQAgIBACBgAAggaAA=</HashCode>
+      <FileName>Játék\JátékTér\Játékelem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.JátékTér.JátékTér" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAAAAgAAAgAEAAIAAAAAACAAACIEAAEAAAAAAAIA=</HashCode>
+      <FileName>Játék\JátékTér\JátékTér.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.JátékTér.KépességFejlesztő" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACgAAAAIAIAAAAQABAAAAQACiCAA=</HashCode>
+      <FileName>Játék\JátékTér\KépességFejlesztő.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.JátékTér.MozgóJátékElem" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACICAAAgAAAAgAAAAACAACAAAAAABgAAAQAAAAAA=</HashCode>
+      <FileName>Játék\JátékTér\MozgóJátékElem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.JátékTér.RögzítettJátékElem" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Játék\JátékTér\RögzítettJátékElem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Keret.Keret" Collapsed="true">
+    <Position X="33" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIiAAEAAAAgAAEAgAIACCAMAFAAQAAAACIAAAAAIQA=</HashCode>
+      <FileName>Játék\Keret\Keret.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.Bomba" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgJAIAIAAAAAAAAAAAAAAAAAAAAABAABAAACAAgCBA=</HashCode>
+      <FileName>Játék\Szabályok\Bomba.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.BombaDbNövelő" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Játék\Szabályok\BombaDbNövelő.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.BombaHatótávNövelő" Collapsed="true">
+    <Position X="20.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Játék\Szabályok\BombaHatótávNövelő.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.Játékos" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIACAAAAIAAAAAEAAAABAEACAAFgAAAgAAAAMAgCAA=</HashCode>
+      <FileName>Játék\Szabályok\Játékos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.KőFal" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAA=</HashCode>
+      <FileName>Játék\Szabályok\KőFal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.MozgásiSebességNövelő" Collapsed="true">
+    <Position X="16.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Játék\Szabályok\MozgásiSebességNövelő.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.Robbanás" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAgAAAAAAAAAEAAAACAAABAAAQAAAgCIA=</HashCode>
+      <FileName>Játék\Szabályok\Robbanás.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.Szörny" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAgAAAAAEAAAAACAAAAAgAAAABAAAgCAA=</HashCode>
+      <FileName>Játék\Szabályok\Szörny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Játék.Szabályok.VasFal" Collapsed="true">
+    <Position X="23" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAA=</HashCode>
+      <FileName>Játék\Szabályok\VasFal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Properties.Resources" Collapsed="true">
+    <Position X="29.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UABBgPwvIAgAgAAASQABMABALwCQSAAAEH/BAIBBgIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomberman.Properties.Settings" Collapsed="true">
+    <Position X="33" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Bomberman.Játék.JátékTér.Megy" Collapsed="true">
+    <Position X="27.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAECAIAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Játék\JátékTér\MozgóJátékElem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

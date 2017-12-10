@@ -1,0 +1,94 @@
+﻿<Window x:Class="Bomberman.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bomberman"
+        mc:Ignorable="d"
+        Title="Bomberman" SizeToContent="WidthAndHeight" Loaded="Window_Loaded" PreviewKeyDown="Window_KeyDown" PreviewKeyUp="Window_KeyUp" ResizeMode="NoResize" WindowStartupLocation="Manual" 
+    Left="0" Top="0" Icon="./Resources/bomba.png" Closing="Window_Closing">
+    <Window.Resources>
+        <local:StringToImageConverter x:Key="StringToImageConverter"/>
+        <local:SecondToMinuteSecondConverter x:Key="SecondToMinuteSecondConverter"/>
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,3,0,0"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" Color="Black" Direction="0" ShadowDepth="1" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="Resources/grass.jpg" Stretch="Uniform" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,40,40"/>
+        </StackPanel.Background>
+        <StackPanel Orientation="Horizontal" Height="40px">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7E7E7E"/>
+                    <GradientStop Color="#FF7E7E7E" Offset="1"/>
+                    <GradientStop Color="#FFC7C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Canvas Width="30" Height="28" Margin="10,2,0,0">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="Resources/time.png"></ImageBrush>
+                </Canvas.Background>
+            </Canvas>
+            <Label Content="{Binding Path=JátékIdő, Converter={StaticResource SecondToMinuteSecondConverter}}"/>
+            <Canvas Width="23" Height="38" Margin="30,2,0,0">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="Resources/bm_n.png"></ImageBrush>
+                </Canvas.Background>
+            </Canvas>
+            <Label ContentStringFormat=": {0}" Content="{Binding Path=JátékosokNeve[0]}" MaxWidth="200"/>
+            <Canvas Width="23" Height="38" Margin="30,2,0,0">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="Resources/2bm_n.png"></ImageBrush>
+                </Canvas.Background>
+            </Canvas>
+            <Label ContentStringFormat=": {0}" Content="{Binding Path=JátékosokNeve[1]}" MaxWidth="200"/>
+            <Label Content="PAUSE" Visibility="{Binding Path=Pause, Converter={StaticResource BoolToVisibilityConverter}}" Margin="30,3,0,0" Foreground="Red"/>
+        </StackPanel>
+        <Grid Width="{Binding Path=PályaMéretX}" Height="{Binding Path=PályaMéretY}">
+            <ItemsControl ItemsSource="{Binding Path=Elemek}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Canvas/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Canvas.Left" Value="{Binding X}"/>
+                        <Setter Property="Canvas.Top" Value="{Binding Y}"/>
+                        <Setter Property="Panel.ZIndex" Value="{Binding ZIndex}"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Canvas Width="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.ElemMéret}" Height="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.ElemMéret}">
+                            <Canvas.Background>
+                                <ImageBrush ImageSource="{Binding Path=Alak, Converter={StaticResource StringToImageConverter}}" Stretch="Uniform">
+                                    <ImageBrush.RelativeTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleY="{Binding Path=BgScaleY}" ScaleX="{Binding Path=BgScaleX}"/>
+                                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                            <RotateTransform CenterY="0.5" CenterX="0.5" Angle="{Binding Path=BgAngle}"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </ImageBrush.RelativeTransform>
+                                </ImageBrush>
+                            </Canvas.Background>
+                        </Canvas>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </StackPanel>
+</Window>
